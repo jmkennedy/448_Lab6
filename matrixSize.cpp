@@ -1,6 +1,6 @@
 #include <vector>
 
-bool checkMatrix(vector<vector<int>> mat1, vector<vector<int>> mat2, int op){
+bool checkMatrix(vector<vector<int> > mat1, vector<vector<int> > mat2, int op){
 	if (op == 1){//Addition
 		//Matricies must be same size
 		if(mat1[1].size == mat2[1].size && mat1.size == mat2.size){
