@@ -5,11 +5,13 @@
 #include <vector>
 #include <iostream>
 
+using namespace std;
+
 vector<vector<int> > matrixMult(vector<vector<int> > m1, vector<vector<int> > m2){
 	//Should be a 2*3 matrix times a 3*4 matrix to produce a 2*4 matrix
 	//Create a 2*4 vector
 	vector<int> rsltCol(4);
-	vector<vector<int> > rslt(2,rsltCol)
+	vector<vector<int> > rslt(2,rsltCol);
 
 	//Multiplication and Storage
 	for(int i=0;i<rslt.size();i++){
