@@ -5,7 +5,7 @@
 #include <vector>
 #include <iostream>
 
-void matrixMult(vector<vector<int> > m1, vector<vector<int> > m2){
+vector<vector<int> > matrixMult(vector<vector<int> > m1, vector<vector<int> > m2){
 	//Should be a 2*3 matrix times a 3*4 matrix to produce a 2*4 matrix
 	//Create a 2*4 vector
 	vector<int> rsltCol(4);
@@ -24,5 +24,5 @@ void matrixMult(vector<vector<int> > m1, vector<vector<int> > m2){
 		}
 	}
 	//Here is where you would return/print the resulting matrix.
-
+	return rslt;
 }
