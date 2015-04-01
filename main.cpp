@@ -3,6 +3,7 @@
 #include "matrixMult.cpp"
 #include "matrixSize.cpp"
 #include "reader.cpp"
+#include "matrixTrans.cpp"
 
 #include <vector>
 #include <iostream>
@@ -17,7 +18,7 @@ int main()
 	vector<vector<int> > matrixAdd2;
 	vector<vector<int> > matrixMult1;
 	vector<vector<int> > matrixMult2;
-	vector<vector<int> > matrixTrans;
+	vector<vector<int> > matrixTrans1;
 	
 	if(ReadFile("add1.csv", matrixAdd1) && ReadFile("add2.csv", matrixAdd2))
 	{
@@ -65,18 +66,18 @@ int main()
 		cout << "Failed to read multiplication matrix." << endl;
 	}
 
-	if(ReadFile("mult1.csv", matrixTrans))
+	if(ReadFile("mult1.csv", matrixTrans1))
 	{
-		if(checkMatrix(matrixTrans))
+		if(checkMatrix(matrixTrans1))
 		{
-			if(matrixSize(matrixTrans, matrixTrans, 3))
+			if(matrixSize(matrixTrans1, matrixTrans1, 3))
 			{
 
 				cout << "-----Transposing matrix-----\n";
 				cout << "Matrix 1:\n";
-				PrintMatrix(matrixTrans);
+				PrintMatrix(matrixTrans1);
 				cout << "The Transpose of matrix 1 is:\n";
-				//PrintMatrix(transposeMatrix(matrixTrans));
+				PrintMatrix(matrixTrans(matrixTrans1));
 			}else{
 				cout << "Matrix is not the right size." << endl;
 			}
