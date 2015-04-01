@@ -19,7 +19,7 @@ int main()
 	vector<vector<int> > matrixMult2;
 	vector<vector<int> > matrixTrans;
 	
-	if(ReadFile("add1.cvs", matrixAdd1) && ReadFile("add2.cvs", matrixAdd2))
+	if(ReadFile("add1.csv", matrixAdd1) && ReadFile("add2.csv", matrixAdd2))
 	{
 		if(checkMatrix(matrixAdd1) && checkMatrix(matrixAdd2))
 		{
@@ -42,7 +42,7 @@ int main()
 		cout << "Failed to read addition matrix." << endl;
 	}
 
-	if(ReadFile("mult1.cvs", matrixMult1) && ReadFile("mult2.cvs", matrixMult2))
+	if(ReadFile("mult1.csv", matrixMult1) && ReadFile("mult2.csv", matrixMult2))
 	{
 		if(checkMatrix(matrixMult1) && checkMatrix(matrixMult2))
 		{
@@ -65,7 +65,7 @@ int main()
 		cout << "Failed to read multiplication matrix." << endl;
 	}
 
-	if(ReadFile("mult1.cvs", matrixTrans))
+	if(ReadFile("mult1.csv", matrixTrans))
 	{
 		if(checkMatrix(matrixTrans))
 		{
