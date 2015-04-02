@@ -66,7 +66,7 @@ int main()
 		cout << "Failed to read multiplication matrix." << endl;
 	}
 
-	if(ReadFile("mult1.csv", matrixTrans1))
+    if(ReadFile("trans1.csv", matrixTrans1))
 	{
 		if(checkMatrix(matrixTrans1))
 		{
@@ -76,8 +76,9 @@ int main()
 				cout << "-----Transposing matrix-----\n";
 				cout << "Matrix 1:\n";
 				PrintMatrix(matrixTrans1);
+                transpose(matrixTrans1);
 				cout << "The Transpose of matrix 1 is:\n";
-				PrintMatrix(matrixTrans(matrixTrans1));
+                PrintMatrix(matrixTrans1);
 			}else{
 				cout << "Matrix is not the right size." << endl;
 			}
