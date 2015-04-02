@@ -1,0 +1,11 @@
+Lab6: main.o transpose.o checkMatrix.o
+	g++ -g -std=c++11 main.o -o Lab6 
+
+main.o: main.cpp transpose.cpp checkMatrix.cpp
+	g++ -g -std=c++11 -c main.cpp
+
+transpose.o: transpose.cpp
+	g++ -g -std=c++11 -c transpose.cpp
+
+checkMatrix.o: checkMatrix.cpp
+	g++ -g -std=c++11 -c checkMatrix.cpp
